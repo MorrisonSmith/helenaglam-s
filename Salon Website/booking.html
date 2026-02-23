@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+<section class="booking">
+    <div class="booking-card">
+
+        <h1>Book Your Appointment</h1>
+        <p>Fill in the details and we’ll take care of your beauty needs</p>
+
+        <form id="bookingForm">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <select required>
+                <option value="">Select Service</option>
+                <option>Nature Hair</option>
+                <option>Hair Styling (Blow Dry, Ironing, Curling)</option>
+                <option>Wig Installation</option>
+                <option>Manicure and Pedicure</option>
+                <option>Nail</option>
+                <option>Makeup</option>
+                <option>Eye Makeup & Lashes</option>
+                <option>Hair Wash & Conditioning</option>
+            </select>
+
+            <select required>
+                <option value="">Hair Type</option>
+                <option>Hair Cut</option>
+                <option>Hair Styling</option>
+                <option>Hair Coloring</option>
+                <option>Hair Installation</option>
+                <option>Bridal Makeup</option>
+            </select>
+
+            <input type="date" required>
+
+            <input type="time" required>
+
+            <textarea placeholder="Additional Message (Optional)"></textarea>
+
+             <button type="submit" onclick="confirmBooking()">Confirm Booking</button>
+                            <!-- Messenger Chat Link -->
+            <a href="https://www.facebook.com/helenaglamsalon" 
+                target="_blank" 
+                class="messenger-btn">
+                    💬 Chat on Messenger
+            </a>
+        </form>
+
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+</section>
+
+</body>
+</html>

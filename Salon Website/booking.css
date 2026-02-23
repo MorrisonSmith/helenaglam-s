@@ -1,0 +1,131 @@
+/* ===============================
+   MODERN BOOKING PAGE
+================================ */
+.booking {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f9f1f3, #ffffff);
+    padding: 30px 15px;
+}
+
+/* Booking Card */
+.booking-card {
+    background: #ffffff;
+    max-width: 520px;
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Heading */
+.booking-card h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #d18f9b;
+    font-size: 28px;
+}
+
+.booking-card p {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.booking-card input,
+.booking-card select,
+.booking-card textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.booking-card textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Focus effect */
+.booking-card input:focus,
+.booking-card select:focus,
+.booking-card textarea:focus {
+    outline: none;
+    border-color: #d18f9b;
+    box-shadow: 0 0 0 3px rgba(209, 143, 155, 0.15);
+}
+
+/* Submit Button */
+.booking-card button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #d18f9b, #f3b7c1);
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.booking-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+/* Back to Home Button */
+.back-home {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #d18f9b;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.back-home:hover {
+    color: #b96c79;
+    text-decoration: underline;
+}
+
+.messenger-btn {
+    display: block;
+    margin-top: 14px;
+    text-align: center;
+    padding: 13px;
+    background-color: #0084ff;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.messenger-btn:hover {
+    background-color: #006fe0;
+}
+
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+@media (max-width: 480px) {
+    .booking-card {
+        padding: 25px 20px;
+    }
+
+    .booking-card h1 {
+        font-size: 24px;
+    }
+}
